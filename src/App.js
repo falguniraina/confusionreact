@@ -5,20 +5,16 @@ import { DISHES } from './shared/dishes';
 
 import Menu from './components/MenuComponent';
 
-
-
-
-
 class App extends Component {
   constructor(props) {
-    super(props);
+    super();
     this.state = {
       dishes: DISHES
     };
   }
   render() {
     return (
-      <div className="App">
+      <div>
         <Navbar dark color="primary">
           <div className="container">
             <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
